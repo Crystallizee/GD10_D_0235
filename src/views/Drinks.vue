@@ -181,7 +181,7 @@ export default {
     save() {
       if (this.editedIndex != -1) {
         drinkRef
-          .child(this, this.editedIndex)
+          .child(this.editedIndex)
           .set(this.editedItem)
           .then(() => {
             alert("Berhasil Edit Data !");
